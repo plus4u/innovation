@@ -1,0 +1,60 @@
+    h1 {  font-size: 25px;  text-align: center;
+          border-bottom: 1px solid black;  margin: 0;   padding: 20px;  }
+
+    h2 {  font-size: 15px;  text-align: center; border-bottom: 2px solid gray; }
+
+      a { border: 0px; color: black;   text-decoration: none; }
+
+      ol {  border: 0px; border-right: 1px solid gray ;
+            width: 270px; margin: 10px; padding: 5px;       }
+
+        li { margin: 5px; padding: 5px; }
+
+        ul  { margin: 5px; padding: 5px; }
+          p  { margin: 10px; padding: 10px; }
+
+
+body {
+          display: grid;
+        grid-template-areas:
+          "top top top top"
+          "hea hea hea hea"
+          "nav des des des"
+          "nav lef mid rig"
+          "nav bot bot bot";
+            grid-template-rows: 100px 90px 1fr 1fr;
+            grid-template-columns: 20% 1fr 1fr 1fr;
+            grid-gap: 5px;
+            height: 100vh;
+          /*  border: 1px solid gray;   */
+            margin: 15px;
+            }
+          hea, nav, des, lef, mid, rig, bot {
+            margin: 5px
+            padding: 30px;
+            background: white;
+          }
+          #pageTop {
+            grid-area: top;
+          }
+          #pageHeader {
+            grid-area: hea;
+          }
+          #pageDes {
+            grid-area: des; border-bottom: 1px solid gray;
+          }
+          #mainMenu {
+            grid-area: nav;
+            }
+          #subLef {
+            grid-area: lef; border-right: 1px solid gray;
+            }
+          #subMid {
+            grid-area: mid; border-right: 1px solid gray;
+            }
+          #subRig {
+              grid-area: rig;
+              }
+          #subBot {
+              grid-area: bot; border-top: 1px solid gray;
+              }
