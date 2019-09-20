@@ -1,0 +1,169 @@
+  <!doctype html>
+  <html>
+
+  <head>
+    <title>Big Data Analytics</title>
+    <meta charset="utf-8">
+
+    <style>
+      body{     margin:10;    }
+      a { color:black; text-decoration: none;   }
+      h3 { font-size:35px;    text-align: center;   border-bottom:1px solid gray;    margin:0;    padding:20px;   }
+      h4 { font-size:25px;    text-align: center;   border-bottom:1px solid gray;    margin:0;    padding:20px;   }
+      ol{ border-right:1px solid gray;    width:220px;  margin:0;  padding:10px;  }
+      #grid{ display: grid;  grid-template-columns: 260px 1fr;   }
+      #grid ol{     padding-left:30px;    }
+      #grid #article{      padding-left:35px;    }
+    </style>
+  </head>
+
+  <body>
+    <h3><a href="L_bda.html">알아야 하는 빅데이터 : 통계, R, Shiny, Python, web, Java</a></h3>
+    <div id="grid">
+      <ol>
+        <li><a href="#c1">4차 산업혁명 영상</a></li><br>
+    <!--  <dd> dd 목록의 설명 </dd> -->
+        <li><a href="#c2">빅데이터 개념</a></li><br>
+        <li><a href="#c3">통계분석 핵심 정리</a></li><br>
+        <li><a href="#c4">오픈소스 개요</a></li><br>
+        <li><a href="#r1">R code</a></li><br>
+        <li><a href="#r2">R graph</a></li><br>
+        <li><a href="#s1">Shiny 16 tool</a></li><br>
+        <li><a href="#s2">Shiny code</a></li><br>
+        <li><a href="#m1">머신 러닝 개념</a></li><br>
+        <li><a href="#p1">Python</a></li><br>
+            <ul>
+              <li><a href="html">Python</a></li><br>
+              <li><a href="html">TensorFlow</a></li><br>
+              <li><a href="html">TensorBoard</a></li><br>
+              <li><a href="html">Pandas</a></li><br>
+              <li><a href="html">Numpy</a></li><br>
+            </ul><br>
+        <li><a href="#w1">web</a></li><br>
+            <ul>
+              <li><a href="html">HTML</a></li>
+              <li><a href="css">CSS</a></li>
+              <li><a href="JavaScript">JavaScript</a></li>
+            </ul><br>
+        <li><a href="#j1">Java</a></li><br>
+        <li><a href="#pr1">Programing</a></li><br>
+        <li><a href="#pr2">MSA</a></li><br>
+        <li><a href="#doc1">빅데이터 관련 자료 구조</a></li><br>
+        <li><a href="#doc2">arduino 프로그램 </a></li><br>
+
+      </ol>
+      <div id="article">
+
+        <p> 4차 산업혁명은 초 연결의 시대이다. 기계, 자재, 공정, 사람들 간에 정보가 연계되고 가상 공간에서 시물레이션하여 최적의 방안으로
+          의사결정하는 CPPS 시대이다. </P>
+        <P> 그러나, 그러한 기회는 단지 솔루션이나 시스템을 도입한다고 해결되는 것이 아니라 프로세스와 필요한 데이터들이
+           준비가 되어 있어야 한다. 그럼에도 준비사항은 도외시 한채 무조건 "스마트 팩토리"를 추구하는 경향이 있다.
+           스마트 팩토리를 하기만 하면 기업은 성공을 하고 경쟁력을 확보하는 것인가.
+             원래 제조업에서 4차 산업혁명의 근본적인 목적은 고객에게 새로운 가치를 주고 기어은 생존과 경쟁력을 확보하기 위함이다.</P>
+        <P>  - 그러기 위해선 제일 먼저 고민할 부분이 기업이 수행하는 사업방식이나 제품의 경쟁력이다. </P>
+        <P> - 두번째는 제품을 만들어 내는 설계, 구매, 생산방식이 얼마나 효율화되어 있는 지에 대한 운영 효율화 이다. </P>
+        <P> - 세번째는 외부의 변화에 신속하게 대응할 수 있는 프로세스와 시스템을 갖추고 새로운 가치를 위해 외부와
+              협력하고 빅데이터를 얼마나 활용할 수 있는 지 이다. </P>
+        <P> 이러한 것들을 가능케 하는 것이 기업 내부적으로 디지털 기술과 빅데이터의 이해를 바탕으로 디지털 분임조 활동과 같이
+                계속하여 혁신을 지속하는 것이다. </P>
+
+          <h4 id="c1">4차 산업혁명 관련 세계 각 기업들의 활동 상황 </h4>
+            <a href="L_Video_clip_UseCase_DT_ERP_PLM.pdf"> L_Video_clip_UseCase_DT_ERP_PLM <img width="20" src="pdf.png"></a>
+            <p> 4차 산업혁명 관련 세계 각 기업들의 활동 상황     </p><br>
+            <a href="L_ChungNam_DT_BM_p1_공유_16.pdf"> L_ChungNam_DT_BM_p1_공유_16 <img width="20" src="pdf.png"></a>
+            <p> 스마트 공장 이해, 핵심 디지털 기술, 기업운영 시스템, 핵심내용과 Demo </P>
+            <P> 혁신기업이란, 사업모델, 스마트 공장 수준진단, IIoT, CPS, CLOUD 개념     </p><br>
+              <p> * 그림 설명 : 제조기업 4차 산업혁명 초연결 상태의 기업 정보관리 체계 </P>
+              <img src="EA.png" width="90%"> <br>
+
+          <h4 id="c2">빅데이터 개념</h4>
+            <a href="L_ChungNam_SF_BDA_p2_공유_16.pdf">L_ChungNam_SF_BDA_p2_공유_16<img width="20" src="pdf.png"></a>
+            <p> 빅데이터가 왜 중요하며, 빅데이터의 절차, 그런데 막상 적용하려면 왜, 어려운지..., 빅데이터 활용을 위한 아이디어 개발 방법 소개    </p><br>
+
+            <a href="320. ML_algorithm_code_summary.pdf">320. ML_algorithm_code_summary<img width="20" src="pdf.png"></a>
+            <p>       머신러닝 알고리즘 실제 code 소개    </p><br>
+
+            <a href="L_Program_Code_summary.pdf"> L_Program_Code_summary<img width="20" src="pdf.png"></a>
+            <p>  빅데이터 개념 이해를 위한 사전 지식 및 BDA Contents list, 핵심 개념 및 Code : R/Shiny , AI, ML Web/Cloud    </p><br>
+
+          <p> * 그림 설명 : 작업현장에서 발생한 데이터가 클라우드 분석 서버에 저장되어 분석되어 실제 활용되기 까지의 전체 흐름 </P>
+          <img src="BDA_flow.png" width="90%"> <br>
+          <p> * 그림 설명 : 빅데이터 이해를 위한 사전 준비 사항 </P>
+          <img src="bda_ch_3.png" width="90%"> <br>
+          <p> * 그림 설명 : 빅데이터 활용을 위한 오픈소스 이해 </P>
+          <img src="bda_ch_4.png" width="90%"> <br>
+
+        <h4 id="c3"> 통계분석 핵심 정리 </h4>
+              <a href="510. BDA_Statistics_quick_review">510. BDA_Statistics_quick_review<img width="20" src="pdf.png"></a>
+              <p> 빅데이터 분석을 위한 통계 기본의 소개     </p><br>
+
+          <h4 id="c4">오픈소스 개요 </h4>
+            <a href="L_Program_Code_summary.pdf">L_Program_Code_summary<img width="20" src="pdf.png"></a>
+            <p> * 그림 설명 : 빅데이터 관련 오픈소스 (R, Shiny, Python, WEB:HTML/CSS)의 프로그램 언어, 개발환경(IDE) 관련 설명 </P>
+            <img src="program_atom_eclipse.png" width="90%"> <br><br>
+            <p> * 그림 설명 : 빅데이터 관련 오픈소스와 소스코드 형태 </P>
+            <img src="source_code.PNG" width="90%"> <br><br>
+            <p> * 그림 설명 : 오픈소스 source code 위치 </P>
+            <img src="code_directory.png" width="90%"> <br><br>
+
+          <h4 id="r1"> R code </h4>
+                <a  href="312. DA_R2_code.pdf"> 312. DA_R2_code <img width="20" src="pdf.png"></a>
+          <p> R을 이용한 각종 통계 분석 방법과 해당 코드     </p><br>
+
+          <h4 id="r2">R graph </h4>
+              <a  href="420. PL_R_graph.pdf">420. PL_R_graph <img width="20" src="pdf.png"></a>
+              <p>  R을 이용한 각종 통계 분석 그래프 시각화 방법    </p><br>
+
+          <h4 id="s1"> Shiny 16 tool </h4>
+              <a  href="312. DA_Shiny_16_tool.pdf">312. DA_Shiny_16_tool <img width="20" src="pdf.png"></a>
+            <p> 주요 통계분석을 Shiny 웹으로 구현      </p><br>
+
+          <h4 id="s2"> Shiny code </h4>
+              <a  href="420. PL_Shiny.pdf">420. PL_Shiny <img width="20" src="pdf.png"></a>
+              <p> Shiny 프로그램 기본    </p><br>
+
+          <h4 id="m1"> 머신 러닝 개념 </h4>
+                  <a  href="321. ML _Concept_Basic.pdf">321. ML _Concept_Basic <img width="20" src="pdf.png"></a>
+             <p> CNN, RNN 등 머신 러닝 개념    </p><br>
+
+          <h4 id="p1"> Python </h4>
+              <a href="320. ML_algorithm_code_summary.pdf">320. ML_algorithm_code_summary<img width="20" src="pdf.png"></a>
+              <p>  머신러닝 Linear Regression, SoftMax, Logistic Classification, CNN, RNN Concept 소개    </p><br>
+              <a  href="322. ML_python_demo.pdf"> 322. ML_python_demo <img width="20" src="pdf.png"></a>
+              <p> 머신러닝 알고리즘 실제 code 내용 소개    </p><br>
+              <a  href="412. Python_detail.pdf">412. Python_detail <img width="20" src="pdf.png"></a>
+              <p> Python 머신러닝 알고리즘 Detail   </p><br>
+              <a  href="413. Python_tf_tb.pdf"> 413. Python_tf_tb <img width="20" src="pdf.png"></a>
+             <p> TensorFlow, TensorBoard 활용   </p><br>
+             <a  href="pdf"> Programing <img width="20" src="pdf.png"></a>
+            <p> TensorFlow, TensorBoard 활용   </p><br>
+
+        <h4 id="w1"> web </h4>
+              <a  href="600. web_html_css.pdf"> 600. web_html_css <img width="20" src="pdf.png"></a>
+              <p> web으로 빅데이터 분석 프로그램 구축 및 시각화 분석내용 조회  </p><br>
+
+          <a href="https://frandelrio.tistory.com/5"> HTML tag list </a>
+          <p> web 작성을 위한 HTML Tag 모음  </p><br>
+
+      <h4 id="pr1">Programing</h4>
+            <a  href=".pdf"> Java, Python, R Code 비교 <img width="20" src="pdf.png"></a>
+            <p> 변수선언, 데이터형(변수 타입, 데이터 타입), 함수, 조건문, 반복문, 클래스, 인스턴스 등에 대한 유사한 작성 방법 정리  </p><br>
+            <a  href=".pdf"> Python 이용 자동 청소기 프로그램 <img width="20" src="pdf.png"></a>
+            <p> 프로그램 작성, API, Library 활용 방법에 대한 개념 정리  </p><br>
+
+      <h4 id="pr2">MSA</h4>
+            <a  href=".pdf"> Agile 방식의 개발 <img width="20" src="pdf.png"></a>
+           <p> EDU에 의한 Prototype의 실현   </p><br>
+
+      <h4 id="doc1">빅데이터 관련 자료 구조</h4>
+          <p> * 그림 설명 : 빅데이터 관련 개념설명, 오픈소스 프로그램의 기본/상세 내용 및 상호 연관된 프로그램 사항 </P>
+            <img src="BDA_pgm_구조.png" width="90%"> <br>
+
+         <h4 id="doc2">arduino program 작성</h4>
+             <p> * 그림 설명 : 빅데이터 관련 개념설명, 오픈소스 프로그램의 기본/상세 내용 및 상호 연관된 프로그램 사항 </P>
+               <img src="BDA_pgm_구조.png" width="90%"> <br>
+        
+        </div>
+    </div>
+    </body>
+    </html>
